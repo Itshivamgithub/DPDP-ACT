@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DPDP Guide | Digital Personal Data Protection Act, 2023</title>
+  <meta name="description" content="Modern interactive guide to India's Digital Personal Data Protection Act, 2023 and DPDP Rules, 2025. Understand roles, rights, obligations, consent, breach notification, and compliance readiness." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="#home" class="brand">
+        <span class="brand-logo">DPDP</span>
+        <span class="brand-text">
+          <strong>Data Protection Guide</strong>
+          <small>India DPDP Act & Rules</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primaryNav">
+        ☰
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#roles">Roles</a></li>
+          <li><a href="#rights">Rights</a></li>
+          <li><a href="#obligations">Obligations</a></li>
+          <li><a href="#breach">Breach</a></li>
+          <li><a href="#checklist">Checklist</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">🌙</button>
+          <a href="#checklist" class="btn btn-primary btn-sm">Start Checklist</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="scroll-progress">
+      <div id="progressBar"></div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">India DPDP Act 2023 • DPDP Rules 2025</span>
+          <h1>
+            DPDP, made <span class="gradient-text">simple</span>, practical, and audit-ready.
+          </h1>
+          <p>
+            A modern learning hub for understanding India’s digital personal data protection regime.
+            Explore roles, rights, obligations, consent mechanics, breach response, and a practical
+            readiness checklist for organizations.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#overview" class="btn btn-primary">Explore Framework</a>
+            <a href="#checklist" class="btn btn-secondary">Open Checklist</a>
+          </div>
+
+          <div class="hero-chips">
+            <span>Consent</span>
+            <span>Data Principal Rights</span>
+            <span>Security Safeguards</span>
+            <span>Breach Notification</span>
+            <span>Children’s Data</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="flow-card">
+            <div class="flow-header">
+              <span class="pulse-dot"></span>
+              DPDP Operating Model
+            </div>
+
+            <ol class="flow-list">
+              <li>
+                <span class="flow-number">01</span>
+                <div>
+                  <strong>Notice</strong>
+                  <p>Tell the user what data is collected and why.</p>
+                </div>
+              </li>
+              <li>
+                <span class="flow-number">02</span>
+                <div>
+                  <strong>Consent</strong>
+                  <p>Obtain free, specific, informed, unambiguous consent.</p>
+                </div>
+              </li>
+              <li>
+                <span class="flow-number">03</span>
+                <div>
+                  <strong>Protection</strong>
+                  <p>Secure data with access control, encryption, logging.</p>
+                </div>
+              </li>
+              <li>
+                <span class="flow-number">04</span>
+                <div>
+                  <strong>Rights</strong>
+                  <p>Enable correction, erasure, withdrawal, grievance.</p>
+                </div>
+              </li>
+              <li>
+                <span class="flow-number">05</span>
+                <div>
+                  <strong>Breach Response</strong>
+                  <p>Notify Board and affected users as required.</p>
+                </div>
+              </li>
+              <li>
+                <span class="flow-number">06</span>
+                <div>
+                  <strong>Improvement</strong>
+                  <p>Learn, audit, remediate, and evolve continuously.</p>
+                </div>
+              </li>
+            </ol>
+
+            <div class="floating-badge badge-a">Lawful</div>
+            <div class="floating-badge badge-b">Secure</div>
+            <div class="floating-badge badge-c">Accountable</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container stats-grid">
+        <article class="stat-card reveal">
+          <h3><span data-count="8">0</span></h3>
+          <p>Key Roles Under DPDP</p>
+        </article>
+        <article class="stat-card reveal">
+          <h3><span data-count="6">0</span></h3>
+          <p>Data Principal Rights</p>
+        </article>
+        <article class="stat-card reveal">
+          <h3><span data-count="24">0</span></h3>
+          <p>Practical Checklist Actions</p>
+        </article>
+        <article class="stat-card reveal">
+          <h3><span data-count="72" data-suffix=" hrs">0</span></h3>
+          <p>Detailed Breach Update Timeline</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section id="overview" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">Overview</span>
+          <h2>What is DPDP?</h2>
+          <p>
+            DPDP stands for <strong>Digital Personal Data Protection</strong>. It regulates the processing
+            of digital personal data in India and attempts to balance individual privacy rights with
+            lawful data processing needs.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card reveal">
+            <div class="card-icon">⚖️</div>
+            <h3>Legal Foundation</h3>
+            <p>
+              Built on the DPDP Act, 2023 and DPDP Rules, 2025. It defines obligations for Data Fiduciaries,
+              Consent Managers, processors, and other stakeholders.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">👤</div>
+            <h3>User Empowerment</h3>
+            <p>
+              Gives Data Principals rights such as information, correction, erasure, consent withdrawal,
+              grievance redressal, and escalation.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">🛡️</div>
+            <h3>Accountability</h3>
+            <p>
+              Requires reasonable security safeguards, breach notification, documented processing records,
+              vendor governance, and compliance evidence.
+            </p>
+          </article>
+        </div>
+
+        <div class="callout reveal">
+          <strong>Simple DPDP formula</strong>
+          <p>
+            DPDP compliance = Know your data + Obtain valid consent + Protect it securely + Respect user rights +
+            Respond to breaches + Prove everything with evidence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROLES -->
+    <section id="roles" class="section alt-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">Roles</span>
+          <h2>Key Roles Under DPDP</h2>
+          <p>
+            DPDP does not only talk about companies. It assigns responsibilities across multiple actors
+            involved in personal data processing.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <article class="role-card reveal">
+            <h3>Data Principal</h3>
+            <p>The individual to whom the personal data relates. Example: customer, employee, patient, student.</p>
+          </article>
+
+          <article class="role-card reveal">
+            <h3>Data Fiduciary</h3>
+            <p>The entity that determines the purpose and means of processing personal data.</p>
+          </article>
+
+          <article class="role-card reveal">
+            <h3>Data Processor</h3>
+            <p>A third party that processes personal data on behalf of the Data Fiduciary.</p>
+          </article>
+
+          <article class="role-card reveal">
+            <h3>Consent Manager</h3>
+            <p>A registered entity that helps users give, manage, review, and withdraw consent.</p>
+          </article>
+
+          <article class="role-card reveal">
+            <h3>Significant Data Fiduciary</h3>
+            <p>A higher-risk Data Fiduciary notified by the Central Government based on scale, sensitivity, or impact.</p>
+          </article>
+
+          <article class="role-card reveal">
+            <h3>Data Protection Board</h3>
+            <p>The regulator responsible for inquiries, compliance enforcement, penalties, and dispute resolution.</p>
+          </article>
+
+          <article class="role-card reveal">
+            <h3>Lawful Guardian</h3>
+            <p>A person authorized to act on behalf of a child or a person with disability where required.</p>
+          </article>
+
+          <article class="role-card reveal">
+            <h3>Digital Locker Provider</h3>
+            <p>A service that may support identity or age-related verification in certain consent flows.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RIGHTS -->
+    <section id="rights" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">Rights</span>
+          <h2>Rights of Data Principals</h2>
+          <p>
+            DPDP gives individuals practical rights over their digital personal data. These rights should be
+            easy to access, clearly communicated, and operationally honored.
+          </p>
+        </div>
+
+        <div class="rights-grid">
+          <article class="right-item reveal">
+            <h3>1. Right to Information</h3>
+            <p>Ask whether personal data is being processed and obtain details about the processing.</p>
+          </article>
+
+          <article class="right-item reveal">
+            <h3>2. Right to Correction</h3>
+            <p>Seek correction, completion, or updating of inaccurate or incomplete personal data.</p>
+          </article>
+
+          <article class="right-item reveal">
+            <h3>3. Right to Erasure</h3>
+            <p>Request deletion of personal data, subject to lawful exceptions and retention requirements.</p>
+          </article>
+
+          <article class="right-item reveal">
+            <h3>4. Right to Withdraw Consent</h3>
+            <p>Withdraw consent as easily as it was given. Processing should stop where consent was the basis.</p>
+          </article>
+
+          <article class="right-item reveal">
+            <h3>5. Right to Grievance Redressal</h3>
+            <p>Complain to the Data Fiduciary through a defined and accessible grievance mechanism.</p>
+          </article>
+
+          <article class="right-item reveal">
+            <h3>6. Right to Escalate</h3>
+            <p>Escalate unresolved concerns to the Data Protection Board as permitted by law.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OBLIGATIONS -->
+    <section id="obligations" class="section alt-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">Obligations</span>
+          <h2>What Data Fiduciaries Must Do</h2>
+          <p>
+            DPDP places duties on organizations that process personal data. These duties must be translated
+            into real operational controls, not just policy statements.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Provide Clear Notice</h3>
+              <p>
+                Before obtaining consent, provide an itemized notice describing personal data, purposes,
+                communication link, and how rights can be exercised.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Obtain Valid Consent</h3>
+              <p>
+                Consent must be free, specific, informed, unconditional, and unambiguous, with clear affirmative action.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Ensure Data Quality</h3>
+              <p>
+                Take reasonable steps to ensure personal data is accurate, complete, and not misleading,
+                considering the purpose of processing.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Implement Security Safeguards</h3>
+              <p>
+                Protect personal data using reasonable technical and organizational measures such as access control,
+                encryption, logging, monitoring, backup, and vendor governance.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Honor Rights Requests</h3>
+              <p>
+                Build workflows for information, correction, erasure, consent withdrawal, and grievance handling
+                with proper audit trails.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Protect Children’s Data</h3>
+              <p>
+                Use verifiable guardian consent, age verification mechanisms, and avoid tracking, behavioral monitoring,
+                or targeted advertising likely to harm children.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Govern Third Parties</h3>
+              <p>
+                Hold processors, cloud providers, vendors, and consent managers accountable through contracts,
+                due diligence, monitoring, and audit rights.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Maintain Evidence</h3>
+              <p>
+                Keep records of processing, consent, rights requests, incidents, trainings, audits, and remediation
+                to demonstrate accountability.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BREACH -->
+    <section id="breach" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">Breach Response</span>
+          <h2>Personal Data Breach Workflow</h2>
+          <p>
+            When a personal data breach occurs, DPDP requires prompt action, communication, and remediation.
+            The goal is to contain harm, inform stakeholders, and restore trust.
+          </p>
+        </div>
+
+        <div class="breach-grid">
+          <article class="breach-card reveal">
+            <div class="breach-step">Immediate</div>
+            <h3>Contain & Assess</h3>
+            <p>
+              Identify affected systems, preserve logs, stop ongoing exposure, assess data categories,
+              and estimate impact on Data Principals.
+            </p>
+          </article>
+
+          <article class="breach-card reveal">
+            <div class="breach-step">Without Delay</div>
+            <h3>Notify Board & Users</h3>
+            <p>
+              Intimate the Data Protection Board and affected Data Principals with nature, extent, timing,
+              likely consequences, and measures taken or proposed.
+            </p>
+          </article>
+
+          <article class="breach-card reveal">
+            <div class="breach-step">Within 72 Hours</div>
+            <h3>Detailed Update</h3>
+            <p>
+              Provide updated detailed information to the Board, including broad facts, circumstances,
+              reasons, and remediation measures where applicable.
+            </p>
+          </article>
+
+          <article class="breach-card reveal">
+            <div class="breach-step">Follow-up</div>
+            <h3>RCA & Remediation</h3>
+            <p>
+              Complete root cause analysis, corrective actions, preventive controls, closure reporting,
+              and lessons learned integration.
+            </p>
+          </article>
+        </div>
+
+        <div class="callout reveal">
+          <strong>Important</strong>
+          <p>
+            Breach response is not only a legal task. It requires coordination across Legal, Privacy, IT, Security,
+            Customer Support, Communications, and Executive Leadership.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHECKLIST -->
+    <section id="checklist" class="section alt-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">Interactive Tool</span>
+          <h2>DPDP Readiness Checklist</h2>
+          <p>
+            Use this checklist to understand what an organization should prepare for DPDP compliance.
+            Your progress is saved locally in your browser.
+          </p>
+        </div>
+
+        <div class="checklist-tools reveal">
+          <div class="search-box">
+            <input type="search" id="checklistSearch" placeholder="Search checklist items..." aria-label="Search checklist" />
+          </div>
+
+          <div class="filter-buttons" role="group" aria-label="Filter checklist categories">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="governance">Governance</button>
+            <button class="filter-btn" data-filter="consent">Consent</button>
+            <button class="filter-btn" data-filter="rights">Rights</button>
+            <button class="filter-btn" data-filter="security">Security</button>
+            <button class="filter-btn" data-filter="breach">Breach</button>
+            <button class="filter-btn" data-filter="children">Children</button>
+            <button class="filter-btn" data-filter="vendor">Vendors</button>
+          </div>
+        </div>
+
+        <div class="progress-panel reveal">
+          <div class="progress-ring">
+            <svg viewBox="0 0 120 120">
+              <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+              <circle id="ringProgress" class="ring-value" cx="60" cy="60" r="52"></circle>
+            </svg>
+            <div class="ring-text">
+              <span id="progressPercent">0%</span>
+              <small>complete</small>
+            </div>
+          </div>
+
+          <div class="progress-details">
+            <h3>Readiness progress</h3>
+            <p id="progressText">0 of 24 completed</p>
+            <div class="progress-bar">
+              <div id="checklistProgress"></div>
+            </div>
+            <button id="resetChecklist" class="btn btn-secondary btn-sm">Reset Checklist</button>
+          </div>
+        </div>
+
+        <div id="checklistContainer" class="checklist-grid">
+          <!-- Governance -->
+          <label class="check-item" data-category="governance">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Assign DPDP ownership</span>
+              <span class="check-desc">Appoint Privacy Officer / DPO and define RACI across Legal, IT, Security, Product, HR, and Procurement.</span>
+              <span class="badge governance">Governance</span>
+            </div>
+          </label>
+
+          <label class="check-item" data-category="governance">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Create DPDP policy</span>
+              <span class="check-desc">Draft and approve a privacy policy covering notice, consent, rights, retention, security, breach, vendors, and training.</span>
+              <span class="badge governance">Governance</span>
+            </div>
+          </label>
+
+          <label class="check-item" data-category="governance">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Maintain RoPA</span>
+              <span class="check-desc">Build a Record of Processing Activities listing data types, purposes, lawful basis, retention, systems, and processors.</span>
+              <span class="badge governance">Governance</span>
+            </div>
+          </label>
+
+          <label class="check-item" data-category="governance">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Run DPDP training</span>
+              <span class="check-desc">Train employees, contractors, Board members, and relevant vendors on privacy obligations and incident escalation.</span>
+              <span class="badge governance">Governance</span>
+            </div>
+          </label>
+
+          <!-- Consent -->
+          <label class="check-item" data-category="consent">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Design compliant notice</span>
+              <span class="check-desc">Ensure notice includes itemized personal data, purposes, communication link, and rights exercise mechanism.</span>
+              <span class="badge consent">Consent</span>
+            </div>
+          </label>
+
+          <label class="check-item" data-category="consent">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Capture affirmative consent</span>
+              <span class="check-desc">Avoid pre-ticked boxes. Consent must be free, specific, informed, unconditional, and unambiguous.</span>
+              <span class="badge consent">Consent</span>
+            </div>
+          </label>
+
+          <label class="check-item" data-category="consent">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Store consent evidence</span>
+              <span class="check-desc">Maintain consent/withdrawal logs with timestamp, purpose, notice version, channel, and user reference.</span>
+              <span class="badge consent">Consent</span>
+            </div>
+          </label>
+
+          <label class="check-item" data-category="consent">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Enable easy withdrawal</span>
+              <span class="check-desc">Make consent withdrawal as easy as giving consent and propagate status to downstream systems.</span>
+              <span class="badge consent">Consent</span>
+            </div>
+          </label>
+
+          <!-- Rights -->
+          <label class="check-item" data-category="rights">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Build rights request workflow</span>
+              <span class="check-desc">Create process for information, correction, updation, erasure, and withdrawal requests with SLA tracking.</span>
+              <span class="badge rights">Rights</span>
+            </div>
+          </label>
+
+          <label class="check-item" data-category="rights">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Publish grievance channel</span>
+              <span class="check-desc">Make grievance contact visible and ensure responses are traceable and time-bound.</span>
+              <span class="badge rights">Rights</span>
+            </div>
+          </label>
+
+          <label class="check-item" data-category="rights">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Verify requester identity</span>
+              <span class="check-desc">Ensure secure identity verification before fulfilling Data Principal requests.</span>
+              <span class="badge rights">Rights</span>
+            </div>
+          </label>
+
+          <label class="check-item" data-category="rights">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Track request closure</span>
+              <span class="check-desc">Maintain register of requests, actions taken, refusal reasons, closure dates, and escalations.</span>
+              <span class="badge rights">Rights</span>
+            </div>
+          </label>
+
+          <!-- Security -->
+          <label class="check-item" data-category="security">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Encrypt personal data</span>
+              <span class="check-desc">Protect data at rest and in transit using industry-standard encryption and key management.</span>
+              <span class="badge security">Security</span>
+            </div>
+          </label>
+
+          <label class="check-item" data-category="security">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Implement access control</span>
+              <span class="check-desc">Use least privilege, MFA, role-based access, and periodic access reviews for systems holding personal data.</span>
+              <span class="badge security">Security</span>
+            </div>
+          </label>
+
+          <label class="check-item" data-category="security">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Enable logging & monitoring</span>
+              <span class="check-desc">Collect logs for database access, admin actions, exports, API traffic, and consent-related events.</span>
+              <span class="badge security">Security</span>
+            </div>
+          </label>
+
+          <label class="check-item" data-category="security">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Conduct VAPT / audits</span>
+              <span class="check-desc">Perform vulnerability assessment, penetration testing, and periodic privacy/security audits.</span>
+              <span class="badge security">Security</span>
+            </div>
+          </label>
+
+          <!-- Breach -->
+          <label class="check-item" data-category="breach">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Create breach response plan</span>
+              <span class="check-desc">Define roles, containment steps, evidence preservation, communication templates, and escalation paths.</span>
+              <span class="badge breach">Breach</span>
+            </div>
+          </label>
+
+          <label class="check-item" data-category="breach">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Notify Board & users</span>
+              <span class="check-desc">Intimate the Board and affected Data Principals as required, with nature, impact, and remediation measures.</span>
+              <span class="badge breach">Breach</span>
+            </div>
+          </label>
+
+          <label class="check-item" data-category="breach">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Perform RCA</span>
+              <span class="check-desc">Complete root cause analysis, corrective actions, preventive actions, and closure evidence.</span>
+              <span class="badge breach">Breach</span>
+            </div>
+          </label>
+
+          <!-- Children -->
+          <label class="check-item" data-category="children">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Add age verification</span>
+              <span class="check-desc">Use lawful mechanisms such as identity/age details, virtual token, or Digital Locker-supported flow where applicable.</span>
+              <span class="badge children">Children</span>
+            </div>
+          </label>
+
+          <label class="check-item" data-category="children">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Get guardian consent</span>
+              <span class="check-desc">For children’s data, obtain verifiable parental/guardian consent before processing.</span>
+              <span class="badge children">Children</span>
+            </div>
+          </label>
+
+          <label class="check-item" data-category="children">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Restrict harmful profiling</span>
+              <span class="check-desc">Avoid tracking, behavioral monitoring, or targeted advertising likely detrimental to children.</span>
+              <span class="badge children">Children</span>
+            </div>
+          </label>
+
+          <!-- Vendors -->
+          <label class="check-item" data-category="vendor">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Map processors & vendors</span>
+              <span class="check-desc">Maintain register of cloud providers, SaaS tools, analytics vendors, support vendors, and sub-processors.</span>
+              <span class="badge vendor">Vendors</span>
+            </div>
+          </label>
+
+          <label class="check-item" data-category="vendor">
+            <input type="checkbox" class="check-input" />
+            <div class="check-body">
+              <span class="check-title">Update contracts</span>
+              <span class="check-desc">Include DPDP clauses: purpose limitation, security, breach notice, audit rights, deletion, and assistance with rights.</span>
+              <span class="badge vendor">Vendors</span>
+            </div>
+          </label>
+        </div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          No checklist items match your search or filter.
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">FAQ</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            Short answers to common DPDP questions for students, professionals, startups, and compliance teams.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>What is DPDP Act, 2023?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                It is India’s law for processing digital personal data. It recognizes both the right of individuals
+                to protect their personal data and the need to process data for lawful purposes.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>Who must comply with DPDP?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Data Fiduciaries processing digital personal data in India, and in certain cases outside India if
+                offering goods or services to Data Principals in India. Consent Managers, processors, and significant
+                fiduciaries also have specific obligations.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>What is valid consent?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Consent must be free, specific, informed, unconditional, and unambiguous, and given through clear
+                affirmative action. Pre-ticked boxes or forced consent for unrelated services are not good practice.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>What happens in a personal data breach?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                The Data Fiduciary must intimate the Board and affected Data Principals as required. DPDP Rules, 2025
+                indicate prompt reporting and detailed follow-up within prescribed timelines.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>Are children treated differently?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. Processing children’s data requires verifiable guardian consent and stronger safeguards.
+                Tracking, behavioral monitoring, and targeted advertising likely to harm children are restricted.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>What is a Consent Manager?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                A Consent Manager is a registered entity that helps Data Principals give, manage, review, withdraw,
+                and obtain records of consent. It must maintain records and provide accessible, machine-readable outputs.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>What is RoPA?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                RoPA means Record of Processing Activities. It is a structured register describing what personal data
+                is processed, why, on what lawful basis, where it is stored, who receives it, and how long it is retained.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is DPDP only a legal document?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                No. DPDP becomes real only when legal requirements are converted into operational controls:
+                consent flows, access reviews, logging, breach playbooks, vendor contracts, training, and audit evidence.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h3>DPDP Guide</h3>
+        <p>
+          Educational website for understanding Digital Personal Data Protection Act, 2023 and DPDP Rules, 2025.
+        </p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#roles">Roles</a></li>
+          <li><a href="#rights">Rights</a></li>
+          <li><a href="#checklist">Checklist</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Disclaimer</h4>
+        <p>
+          This website is for learning and awareness only. It is not legal advice. Always refer to official statutes,
+          rules, notifications, and qualified counsel for compliance decisions.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+
+      <p>©  <span id="year"></span> DPDP Guide | Made with ❤️ by Shivam Rajbhar (Infosec Consultant) | 📞 +91 96287 52881</p>
+   
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
