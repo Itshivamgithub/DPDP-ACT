@@ -1103,7 +1103,7 @@ pre {
 .status-critical {
   background: rgba(220, 38, 38, 0.1);
   color: var(--danger);
-  /* border: 1px solid rgba(220, 38, 38, 0.2); */
+  border: 1px solid rgba(220, 38, 38, 0.2);
 }
 
 /* Responsive adjustments */
