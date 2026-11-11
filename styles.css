@@ -10,7 +10,7 @@
   --accent: #7c3aed;
   --success: #16a34a;
   --warning: #d97706;
-  --danger: #f16666;
+  --danger: #dc2626;
   --shadow: 0 14px 40px rgba(15, 23, 42, 0.08);
   --shadow-strong: 0 20px 60px rgba(15, 23, 42, 0.12);
   --radius: 22px;
@@ -1002,6 +1002,7 @@ pre {
 .tl-date-badge.final {
   border-color: var(--danger);
   color: var(--danger);
+  opacity: 0.5;
   background: rgba(220, 38, 38, 0.1);
   font-size: 0.9rem;
   padding: 8px 14px;
