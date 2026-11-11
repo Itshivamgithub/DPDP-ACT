@@ -481,6 +481,8 @@ pre {
   top: 18px;
   right: -10px;
   color: var(--primary);
+  background: rgba(90, 189, 228, 0.1);
+
 }
 
 .badge-b {
@@ -488,6 +490,8 @@ pre {
   left: -14px;
   color: var(--success);
   animation-delay: -2s;
+  background: rgba(22, 163, 74, 0.1);
+
 }
 
 .badge-c {
@@ -495,6 +499,8 @@ pre {
   right: 20px;
   color: var(--accent);
   animation-delay: -4s;
+  background: rgba(128, 0, 128, 0.1);
+
 }
 
 @keyframes floatBadge {
