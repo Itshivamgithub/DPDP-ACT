@@ -1002,7 +1002,6 @@ pre {
 .tl-date-badge.final {
   border-color: var(--danger);
   color: var(--danger);
-  opacity: 0.5;
   background: rgba(220, 38, 38, 0.1);
   font-size: 0.9rem;
   padding: 8px 14px;
@@ -1104,6 +1103,7 @@ pre {
 .status-critical {
   background: rgba(220, 38, 38, 0.1);
   color: var(--danger);
+  opacity: 0.5;
   border: 1px solid rgba(220, 38, 38, 0.2);
 }
 
