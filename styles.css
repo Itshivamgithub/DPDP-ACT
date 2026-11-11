@@ -1003,8 +1003,8 @@ pre {
   border-color: var(--danger);
   color: var(--danger);
   /* background: rgba(220, 38, 38, 0.1); */
-  font-size: 0.9rem;
-  padding: 8px 14px;
+  /* font-size: 0.9rem;
+  padding: 8px 14px; */
 }
 
 /* The Content Card on the Right */
@@ -1573,4 +1573,163 @@ pre {
   .floating-badge {
     display: none;
   }
+}
+
+
+
+
+/* =============================
+   RESPONSIVENESS FIXES FOR CHECKLIST & ROADMAP
+============================== */
+
+/* --- 1. CHECKLIST GRID FIXES --- */
+@media (max-width: 1024px) {
+  /* Switch from 3 columns to 2 columns on tablets */
+  .checklist-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Ensure progress panel stacks nicely if it's wide */
+  .progress-panel {
+    grid-template-columns: 1fr; /* Stack ring above details */
+    justify-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Center the progress ring when stacked */
+  .progress-ring {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Single column for mobile phones */
+  .checklist-grid {
+    grid-template-columns: 1fr;
+    gap: 12px; /* Reduce gap slightly for tighter mobile feel */
+  }
+  
+  /* Make checklist items full width and easier to tap */
+  .check-item {
+    padding: 16px;
+  }
+  
+  .check-title {
+    font-size: 0.95rem;
+  }
+  
+  .check-desc {
+    font-size: 0.9rem;
+  }
+  
+  /* Fix Filter Buttons Overflow */
+  .filter-buttons {
+    flex-wrap: wrap;
+    justify-content: center; /* Center align buttons on small screens */
+    gap: 6px;
+  }
+  
+  .filter-btn {
+    padding: 8px 12px; /* Smaller padding for touch targets */
+    font-size: 0.85rem;
+    flex: 1 1 auto; /* Allow buttons to grow/shrink based on content */
+    min-width: fit-content;
+  }
+  
+  /* Search Box Full Width */
+  .search-box {
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+  }
+  
+  .search-box input {
+    padding: 12px 14px;
+    font-size: 0.95rem;
+  }
+}
+
+/* --- 2. COMPLIANCE ROADMAP / TIMELINE FIXES --- */
+@media (max-width: 1024px) {
+  /* Keep timeline vertical but reduce left padding */
+  .timeline-vertical {
+    padding-left: 15px;
+  }
+  
+  .tl-item {
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile Timeline Adjustments */
+  .timeline-vertical {
+    padding-left: 10px;
+  }
+  
+  .tl-item {
+    padding-left: 20px;
+    margin-bottom: 30px; /* Slightly less space between phases on mobile */
+  }
+  
+  /* Move Date Badge closer to line */
+  .tl-date-badge {
+    left: -5px;
+    transform: translateX(-50%);
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    white-space: normal; /* Allow date text to wrap if needed */
+    max-width: 120px;
+    text-align: center;
+  }
+  
+  /* Content Card Padding */
+  .tl-content-card {
+    padding: 18px;
+  }
+  
+  .tl-content-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .tl-subtitle {
+    font-size: 0.8rem;
+    word-break: break-word; /* Prevent long section codes from overflowing */
+  }
+  
+  .tl-list li {
+    font-size: 0.9rem;
+    padding-left: 20px;
+  }
+  
+  .tl-list li::before {
+    left: 0;
+    top: 1px;
+  }
+}
+
+/* --- 3. GENERAL UTILITIES FOR BETTER MOBILE UX --- */
+
+/* Prevent horizontal scroll caused by large tables/cards */
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Ensure images/iframes don't break layout */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Touch Target Improvement */
+button, a.btn {
+  min-height: 44px; /* Apple/Android recommended touch target size */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
